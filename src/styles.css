@@ -5,4 +5,9 @@
   background-attachment: fixed;
   width:100%;
   background-repeat:no-repeat;
+  
+}
+.card{
+  width:50%;
+  height:70%;
 }
