@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+#landing{
+  background-image:url('https://thumbs.dreamstime.com/z/logo-github-samsung-tablet-web-based-git-version-control-repository-internet-hosting-service-mostly-used-102705018.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  width:100%;
+  background-repeat:no-repeat;
+}
