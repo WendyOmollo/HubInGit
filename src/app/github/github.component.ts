@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-github',
@@ -6,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
-  
-  constructor() { }
+  @Output() emitPerson = new EventEmitter<any>() 
+  searchUser:string;
 
+  constructor() { }
+  
+  searchPerson(){
+    this.emitPerson.emit(this.searchUser);
+  }
   ngOnInit() {
   }
 
