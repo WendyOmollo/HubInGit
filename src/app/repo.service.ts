@@ -2,9 +2,11 @@ import { Injectable } from '@angular/core';
 import { Repo} from './repo';
 import { HttpClient} from '@angular/common/http';
 import { environment} from '../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
+
 export class RepoService {
 repos:Repo[]=[];
 
@@ -20,10 +22,12 @@ repos:Repo[]=[];
            this.repos = [];
            console.log(results)
            for(let i=0;i<results.data.length;i++){
-             console.log(this.repos);
+             this.repos.push(new Repo(results.data[i][url]))
+         }
+         console.log(this.repos);
              resolve();
            }
-         },
+        },
          (error)=>{
            console.log(error);
            reject();
