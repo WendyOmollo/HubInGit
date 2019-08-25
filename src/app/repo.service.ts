@@ -22,12 +22,12 @@ repos:Repo[]=[];
            this.repos = [];
            console.log(results)
            for(let i=0;i<results.data.length;i++){
-             this.repos.push(new Repo(results.data[i][url]))
+             this.repos.push(new Repo())
          }
          console.log(this.repos);
              resolve();
-           }
-        },
+           },
+        
          (error)=>{
            console.log(error);
            reject();
@@ -37,5 +37,6 @@ repos:Repo[]=[];
      return promise;
    }
 
+  }
 
-}
+
