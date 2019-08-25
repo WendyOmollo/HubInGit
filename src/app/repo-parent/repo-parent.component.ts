@@ -12,17 +12,15 @@ export class RepoParentComponent implements OnInit {
 
   constructor(public repoService:RepoService) { }
 
-  ngOnInit() {
-  }
+  
   searchForRepo(searchRepo:string){
-    this.repoService.searchOneRepo(searchRepo).then(
-      (results)=>{
-        this.repos = this.repoService.repos;
-      },
-      (error)=>{
-        console.log('error')
-      }
-    )
+    this.repoService.searchOneRepo(searchRepo).subscribe(data=>{
+      this.repos = data;
+      console.log(this.repos)
+    })
   }
-
+  ngOnInit() {
+    this.searchForRepo('WendyOmollo');
+  }
 }
+
