@@ -1,4 +1,4 @@
-<app-repo (emitEvent)="searchForRepo()"></app-repo>
+<app-repo (emitEvent)="searchForRepo($event)"></app-repo>
 <div class="card" *ngFor='let repo of repos'>
 <div class="card-body">
   {{repo.url}}
