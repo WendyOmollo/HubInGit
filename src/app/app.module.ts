@@ -9,6 +9,8 @@ import { RepoComponent } from './repo/repo.component';
 import { RepoParentComponent } from './repo-parent/repo-parent.component';
 import { UserComponent } from './user/user.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RepoService} from './repo.service';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [RepoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
