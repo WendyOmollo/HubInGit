@@ -1,6 +1,17 @@
 # HubInGit
 
+## Description
+This project allows a user to search for a repo of their own and that of others. The user can enter their name and their number of repositories will be shown and when the account was created. They can also search for specific repositories of other people. 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+
+## Authors
+Wendy Omollo
+
+## Contributors
+Wendy Omollo
+
+## Setup
+You  can git `git clone` the project on github.You also need angular-cli installations for you to make changes in the app.
 
 ## Development server
 
@@ -25,3 +36,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Tech used
+** HTML
+** CSS
+** MDBootstrap
+** FontAwesome
+** Angular-CLI
+** Javascript
