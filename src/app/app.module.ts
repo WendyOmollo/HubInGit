@@ -7,13 +7,15 @@ import { GithubComponent } from './github/github.component';
 import { FormsModule} from '@angular/forms';
 import { RepoComponent } from './repo/repo.component';
 import { RepoParentComponent } from './repo-parent/repo-parent.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GithubComponent,
     RepoComponent,
-    RepoParentComponent
+    RepoParentComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
