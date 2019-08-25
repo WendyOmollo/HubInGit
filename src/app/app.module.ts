@@ -8,6 +8,7 @@ import { FormsModule} from '@angular/forms';
 import { RepoComponent } from './repo/repo.component';
 import { RepoParentComponent } from './repo-parent/repo-parent.component';
 import { UserComponent } from './user/user.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserComponent } from './user/user.component';
     GithubComponent,
     RepoComponent,
     RepoParentComponent,
-    UserComponent
+    UserComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,13 @@
-<p>user works!</p>
+<form class="form-block">
+  <div class="md-form my-0">
+    <input name='searchUser' class="form-control mr-sm-2" type="text" placeholder="Wendy Omollo" aria-label="Search">
+  </div>
+  <div class="md-form my-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="7" aria-label="Search">
+  </div>
+  <div class="md-form my-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="2019,June,12" aria-label="Search">
+  </div>
+  <button type='submit' class="btn btn-primary" (click)='searchPerson()' [(ngModel)]='user.userName'>Search</button>
+  <!-- Button -->
+</form>
