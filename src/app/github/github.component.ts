@@ -1,4 +1,7 @@
-import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { User} from '../user';
+import { UserService} from '../user.service';
+
 
 
 @Component({
@@ -7,8 +10,24 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
+  constructor(public userService:UserService) { }
+  users:User[];
+
+  searchForUser(searchForPerson:string){
+
+    this.userService.searchForOneUser(searchForPerson).then(
+      ()=>{this.users = this.userService.users;
+      console.log(this.users);
+    },
+    (error)=>{
+      console.log(error);
+    }
+    )
+  }
   
-  constructor() { }
+
+
+  
   
   
   ngOnInit() {
