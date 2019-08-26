@@ -6,4 +6,5 @@ export class User {
   followers:any;
   following:any;
   created_at:Date;
+  
 }

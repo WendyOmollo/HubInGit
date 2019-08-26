@@ -7,10 +7,10 @@ import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 })
 export class UserComponent implements OnInit {
   @Output() emitPerson = new EventEmitter<any>() 
-  searchUser:string;
-  
-  searchPerson(){
-    this.emitPerson.emit(this.searchUser);
+  searchThePerson:string;
+
+  searchUser(){
+    this.emitPerson.emit(this.searchThePerson);
   }
 
   constructor() { }
