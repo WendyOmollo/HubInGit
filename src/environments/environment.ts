@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  "HUB_KEY":"27d5e18b2ed627e35ef5da2aed5a8d8966487c97",
+  HUB_KEY:"27d5e18b2ed627e35ef5da2aed5a8d8966487c97",
 };
 
 /*
