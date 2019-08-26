@@ -16,6 +16,7 @@ export class GithubComponent implements OnInit {
   searchForUser(searchForPerson:string){
 
     this.userService.searchForOneUser(searchForPerson).then(
+
       ()=>{this.users = this.userService.users;
       console.log(this.users);
     },
@@ -25,12 +26,8 @@ export class GithubComponent implements OnInit {
     )
   }
   
-
-
-  
-  
-  
   ngOnInit() {
+    this.searchForUser('WendyOmollo');
   }
 
 }
